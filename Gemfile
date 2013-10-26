@@ -23,11 +23,12 @@ group :assets do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+#  gem 'pg', '0.12.2'
 end
-
+gem 'right-rails'
 gem 'jquery-rails'
-
+gem 'bootstrap-sass'
+gem 'rambling-slider-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

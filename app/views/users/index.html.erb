@@ -1,6 +1,6 @@
 <h1>Listing users</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Name</th>
     <th>Email</th>
@@ -22,4 +22,15 @@
 
 <br />
 
-<%= link_to 'New User', new_user_path %>
+<button class="btn btn-primary"><%= link_to 'New User', new_user_path, class: "button"%></button>
+
+
+<h1>Sortable?</h1>
+<ul class="sortable" data-sortable="">
+<% @users.each do |user| %>
+	<li><%= user.name %></li>
+	<li><%= user.email %></li>
+	
+<% end %>
+</ul>
+
