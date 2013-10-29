@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 group :development do
 
   gem 'sqlite3'
-
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 # Gems used only for assets and not required

@@ -1,3 +1,4 @@
+<% provide(:title, 'Users') %>
 <h1>Listing users</h1>
 
 <table class="table">
@@ -5,6 +6,7 @@
     <th>Name</th>
     <th>Email</th>
     <th>Password</th>
+    <th></th>
     <th></th>
     <th></th>
   </tr>
@@ -23,12 +25,12 @@
 
 <br />
 
-<button class="btn btn-primary"><%= link_to 'New User', new_user_path, class: "button"%></button>
+<%= link_to 'New User', new_user_path, class: "btn btn-primary"%>
 
 
 <h1>Sortable?</h1>
-<ul class="sortable" data-sortable="">
+<ul class="nav nav-list" data-sortable="">
 <% @users.each do |user| %>
-	<li><%= user.name %></li>
+	<li><a href="#"><%= user.name %></a></li>
 <% end %>
 </ul>
