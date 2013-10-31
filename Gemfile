@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
-gem 'rails', '3.2.13'
+gem 'rails', '~> 3.2.14'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -23,8 +25,10 @@ group :assets do
 end
 
 group :production do
-#  gem 'pg', '0.12.2'
+  
+  gem 'pg'
 end
+gem 'rails_12factor'
 gem 'right-rails'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
