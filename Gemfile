@@ -25,10 +25,9 @@ group :assets do
 end
 
 group :production do
-  
+  gem 'rails_12factor'
   gem 'pg'
 end
-gem 'rails_12factor'
 gem 'right-rails'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
