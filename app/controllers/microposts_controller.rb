@@ -3,7 +3,7 @@ class MicropostsController < ApplicationController
   # GET /microposts.json
   def index
     @microposts = Micropost.all
-
+  
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @microposts }
@@ -24,6 +24,7 @@ class MicropostsController < ApplicationController
   # GET /microposts/new
   # GET /microposts/new.json
   def new
+
     @micropost = Micropost.new
 
     respond_to do |format|
