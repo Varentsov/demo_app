@@ -43,6 +43,11 @@ html {
 body {
   padding-top: 60px;
 }
+.row:after{
+margin-bottom:30px;
+
+}
+
 
 .navbar-static-top .container,
 .navbar-fixed-top .container,
